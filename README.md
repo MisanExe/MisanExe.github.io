@@ -1,5 +1,4 @@
 # MisanExe.github.io
-Site to host my projects 
+## HI ! i am misan, thanks for visiting . Page is still under construction 😁
 
-#added link to main html file
 Click this Link to Main Project site [Misan.exe](https://misanexe.github.io/main.html)
