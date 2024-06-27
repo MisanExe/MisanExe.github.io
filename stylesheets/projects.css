@@ -1,0 +1,35 @@
+
+
+.container{
+    background-color: rgb(115, 123, 124);
+    padding: 20px;
+    margin: 100px;
+    text-align: center;
+    justify-content: flex-start;
+    border-radius: 20px;
+
+}
+.menu{
+    display : flex;
+    gap : 1em;
+}
+
+.box{
+    background-color: #9ba39b;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    flex: 1;
+    min-width: 100px; 
+    border-radius: 10px;
+}
+.box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.box p{
+    color: rgb(0,0,0);
+}
