@@ -1,0 +1,36 @@
+
+body{
+    background-color: #247BA0;
+}
+
+#title{
+    margin-top: 100px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.articleTitle{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+hr {
+    border: none; 
+    height: 2px; 
+    background-color: #000; /* Set the color of the line */
+    margin: 20px 0;
+    width: 50%; 
+    text-align: center; 
+  }
+
+.article{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight: 100;
+    text-align: left;
+}
+.giphy-embed{
+    margin-right: 1000px;
+}
+
+.Date{
+    color : white;
+}
