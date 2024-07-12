@@ -11,9 +11,9 @@
     
     <body>
         <!-- Navigation bar -->
-        <div >
+        <div class="nav">
             <ul class="topnav">
-                <li><a class="active" href="main.html">Home</a></li>
+                <li><a href="main.html">Home</a></li>
                 <li><a href="./projects/projects.html">Projects</a></li>
                 <li><a href="https://github.com/MisanExe" target="_blank" >Github page</a></li>
                 <li><a href="Electrical_Calc/E_calc.html">Tools</a></li>
@@ -26,6 +26,25 @@
         <div>
             <!-- Detail -->
         </div>
+        <script>
+            // Get the current URL path and filename
+            const currentPath = window.location.pathname.split("/").pop();
+    
+            // Get all nav links
+            const navLinks = document.querySelectorAll('.topnav li a');
+    
+            // Loop through each nav link
+            navLinks.forEach(link => {
+                // Get the href attribute value of the link
+                const linkPath = link.getAttribute('href').split("/").pop();
+    
+                // Check if the link's href matches the current path
+                if (linkPath === currentPath) {
+                    // Add the 'active' class to the parent li element
+                    link.parentElement.classList.add('active');
+                }
+            });
+        </script>
     </body>
 
     

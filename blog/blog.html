@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <link rel="stylesheet" href="../stylesheets/blog.css"/>
 </head>
 
 <body>
 
-    <div >
-        <link rel="stylesheet" href="../stylesheets/main.css"/>
+    <div class="nav">
+        
         <ul class="topnav">
-            <li><a class="active" href="../main.html">Home</a></li>
+            <li><a href="../main.html">Home</a></li>
             <li><a href="../projects/projects.html">Projects</a></li>
             <li><a href="../https://github.com/MisanExe" target="_blank" >Github page</a></li>
             <li><a href="../Electrical_Calc/E_calc.html">Tools</a></li>
@@ -24,39 +25,67 @@
 
     <!--Robot project-->
     <div>
-        <link rel="stylesheet" href="../stylesheets/blog.css"/>
-        <h2 class="articleTitle">Robot project Rejection</h2>
-        <hr/>
-        <!--Date div-->
-        <div>
-            <p class="Date"><strong>Date :</strong></p>
-            <p class="Date">2024-06-28</p>
-        </div>
-        
-        <p class="article">
-            Today, i presented my current progress with the robot (<a href="../projects/Robotics/Esther.html">Esther</a>) project to the out faculty advisor.<br/>
-            For some reason, he shut down our project, stating concerns about efficient steering of the robot<br/>
-            <iframe src="https://giphy.com/embed/BY8ORoRpnJDXeBNwxg" width="480" height="398" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/theoffice-BY8ORoRpnJDXeBNwxg">via GIPHY</a></p>
-            <p class="article">He's suggested that we help him finish a final project he's been working on.<br/>
-            It feels premeditated, and i feel numb.<br>
-            I'm exactly sure what to make of it. I had been botted from my old job sometime in may, so i'm not making any money.<br>
-            I started this project with the little savings i had. I know i can get it to work, but he doesn't think so<br/></p>
-        </p>
-        <p class="article">
-            He kept saying the project he had suggested seems to be more "practical and acheivable"?
-            <iframe src="https://giphy.com/embed/M0oCEhRuxtOrVyAPA7" width="480" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/tncafrica-tnc-lbbseries-africa-M0oCEhRuxtOrVyAPA7">via GIPHY</a></p>
-            <br/><strong>"whatever those words mean".</strong><br/>
-            <p class="article">It sounded as if most student were opting for simpler projects and he's assuming we were in same category. 
-            Whatever happened to innovation?<br/>
-            <strong>Like, allow me fail at my task so i can learn bruh!</strong><br/>
-            Well, i guess everyone just wants to get the degree and f*** off.<br/>
-            <br/>
-            I intend to continue with my project tho, lol some sort of<a href="https://www.techtarget.com/searchcio/definition/skunkworks"> "Skunk works"</a>. I'll sleep over it and decide tommorow.</p>
-            <iframe src="https://giphy.com/embed/nFFguNjdeotwc" width="480" height="264" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/nFFguNjdeotwc">via GIPHY</a></p>
+        <div class="content">
+            
+            <h2 class="articleTitle">Robot project Rejection</h2>
             <hr/>
-        </p>
+            <!--Date div-->
+            <div>
+                <p class="Date"><strong>Date :</strong></p>
+                <p class="Date">2024-06-28</p>
+            </div>
+            
+            <p class="article">
+                Today, i presented my current progress with the robot (<a href="../projects/Robotics/Esther.html">Esther</a>) project to the out faculty advisor.<br/>
+                For some reason, he shut down our project, stating concerns about efficient steering of the robot<br/>
+                
+            </p>
+
+            <iframe src="https://giphy.com/embed/BY8ORoRpnJDXeBNwxg" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/theoffice-BY8ORoRpnJDXeBNwxg">via GIPHY</a>
+
+            <p class="article">
+                He's suggested that we help him finish a final project he's been working on.<br/>
+                It feels premeditated, and i feel numb.<br>
+                <br/>
+                I'm not exactly sure what to make of it. I had been botted from my old job sometime in may, so i'm not making any money.<br>
+                I started this project with the little savings i had. I know i can get it to work, but he doesn't think so<br/>
+            </p>
+
+            <p class="article">
+                He kept saying the project he had suggested seems to be more "practical and acheivable"?
+                <iframe src="https://giphy.com/embed/M0oCEhRuxtOrVyAPA7"  frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/tncafrica-tnc-lbbseries-africa-M0oCEhRuxtOrVyAPA7">via GIPHY</a></p>
+                <br/><strong>"whatever those words mean".</strong><br/>
+                <p class="article">It sounded as if most student were opting for simpler projects and he's assuming we were in same category. 
+                Whatever happened to innovation?<br/>
+                <strong>Like, allow me fail at my task so i can learn bruh!</strong><br/>
+                Well, i guess everyone just wants to get the degree and f*** off.<br/>
+                <br/>
+                I intend to continue with my project tho, lol some sort of<a href="https://www.techtarget.com/searchcio/definition/skunkworks"> "Skunk works"</a>. I'll sleep over it and decide tommorow.</p>
+                <iframe src="https://giphy.com/embed/nFFguNjdeotwc" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/nFFguNjdeotwc">via GIPHY</a></p>
+                <hr/>
+            </p>
     
+        </div>
     </div>
+    <script>
+        // Get the current URL path and filename
+        const currentPath = window.location.pathname.split("/").pop();
+
+        // Get all nav links
+        const navLinks = document.querySelectorAll('.topnav li a');
+
+        // Loop through each nav link
+        navLinks.forEach(link => {
+            // Get the href attribute value of the link
+            const linkPath = link.getAttribute('href').split("/").pop();
+
+            // Check if the link's href matches the current path
+            if (linkPath === currentPath) {
+                // Add the 'active' class to the parent li element
+                link.parentElement.classList.add('active');
+            }
+        });
+    </script>
 
 </body>
 </html>

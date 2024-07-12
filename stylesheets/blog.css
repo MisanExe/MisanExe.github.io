@@ -6,20 +6,23 @@ body{
 #title{
     margin-top: 100px;
     font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    display: block;
+    position: static;
 }
 
 .articleTitle{
     font-family: 'Courier New', Courier, monospace;
 }
 
-hr {
+hr{
     border: none; 
     height: 2px; 
     background-color: #000; /* Set the color of the line */
-    margin: 20px 0;
-    width: 50%; 
-    text-align: center; 
-  }
+    margin: 0px;
+    width: 100%; 
+    
+}
 
 .article{
     font-family: 'Courier New', Courier, monospace;
@@ -27,10 +30,96 @@ hr {
     font-weight: 100;
     text-align: left;
 }
-.giphy-embed{
-    margin-right: 1000px;
-}
+
+
 
 .Date{
     color : white;
+}
+
+.content{
+    text-align: center;
+    margin : 10px
+}
+
+
+@media (min-width : 700px){
+
+    /*style nav*/
+    .topnav{
+        display : flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #333;
+        left : 10px;
+        position: fixed;
+        z-index: 2;
+        gap : 10px;
+    }
+
+    ul.topnav > li a {
+  
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        flex-wrap: wrap;
+      
+      }
+
+    li a:hover {
+    background-color: #111;
+    }
+      
+    .active{
+        background-color: rgb(68, 174, 207);
+    }
+
+    .giphy-embed{
+        height: 500px;
+        width:  500px;
+        position: relative;
+        left : 250px -50%;
+    }
+}
+
+@media (max-width : 700px ) and (min-width : 300px) {
+    .topnav{
+        
+        display : flex;
+        gap : 20px;
+        background-color: #333;
+        flex-direction: column;
+        list-style-type: none;
+        font-family: 'Times New Roman', Times, serif;
+       
+        justify-content: center;
+        position: static;
+        padding-left: 0%;
+    }
+
+    .topnav >li a{
+        color : white;
+        display: block;
+        text-align: center;
+        flex-wrap: wrap;
+        text-decoration: none;
+    }
+    .topnav li >a{
+        margin : 1px;
+        padding: 10px;
+    }
+
+    .article > .giphy-embed{
+        height: 300px;
+        width:  300px;
+        position: relative;
+        left : 150px -50%;
+    }
+
+    .active{
+        background-color: rgb(68, 174, 207);
+    }
 }
